@@ -33,7 +33,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img width="160" src="img/tsugiCloud_blackBack.png">
+                    <img width="160" src="/img/tsugiCloud_blackBack.png">
                 </a>
             </div>
 
@@ -63,23 +63,123 @@
         <!-- /.container -->
     </nav>
 
-        <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Tsugi-Dev</h1>
-                        <p class="intro-text">This is a free, hosted developer instance of Tsugi.  It is reset daily at midnight Eastern. It runs the tip of the master branch of Tsugi. You can test applications on this site, learn how to administer a Tsugi instance, or use it for demonstrations.<br>
+    
+      
+
+<div class="intro hidden-xs hidden-sm" 
+
+style="background: url('/img/intro-bg.jpg') bottom center no-repeat scroll; background-size: cover; text-align: center;" 
+
+>
+<div id="myCarousel" class="carousel slide"
+     data-ride="carousel" data-interval="7000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+    
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+    
+      <div class="item active" 
+         
+           style="backface-visibility: hidden;"
+         >
+        <div><h1>TSUGI-DEV</h1><p>This is a free, hosted developer instance of Tsugi. It is reset daily at midnight Eastern. It runs the tip of the master branch of Tsugi. You can test applications on this site, learn how to administer a Tsugi instance, or use it for demonstrations.</p></div>
+      </div>
+    
+      <div class="item" 
+         
+           style="backface-visibility: hidden;"
+         >
+        <div><h1>Developers</h1>Please create and submit your open source Tsugi tools to the TsugiCloud App Store.</div>
+      </div>
+    
+      <div class="item" 
+         
+           style="backface-visibility: hidden;"
+         >
+        <div><h1>Administrators</h1>You can use these servers to test tools without using your production Tsugi instance.</div>
+      </div>
+    
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left">‹</span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right">›</span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+ 
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+</div>
 
+<div class="visible-xs visible-sm" 
+style="text-align: center; margin-top: 100px;">
+<p>
+<h1>TSUGI-DEV</h1><p>This is a free, hosted developer instance of Tsugi. It is reset daily at midnight Eastern. It runs the tip of the master branch of Tsugi. You can test applications on this site, learn how to administer a Tsugi instance, or use it for demonstrations.</p>
+</p>
+</div>
+
+  <style>
+  #myCarousel .item { width: 100%; backface-visibility: visible;}
+  #myCarousel .item {padding-bottom: 50%;}
+  
+  #myCarousel .item > div {position: absolute; left: 50%; top: 50%;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari */
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 40px black;
+    font-size: 15px;
+    white-space: wrap;
+  }
+  #myCarousel .item > div h2 {
+    padding-top: 7px;
+    color: white; 
+    font-weight: bold; font-size: 30px; 
+  }
+  #myCarousel span.glyphicon {
+      font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+      color: white!important;
+      font-size: 60px!important;
+      height: 60px!important;
+      line-height: 50px!important;
+      margin-top: -30px!important;
+  }
+  #myCarousel .carousel-control {opacity: 1!important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  min-width: 60px!important;
+  }
+  #myCarousel .carousel-control:hover {opacity: 1!important;}
+  #myCarousel .carousel-indicators {bottom: 0!important; margin-bottom: 12px;}
+  #myCarousel .glyphicon-chevron-left::before,
+  #myCarousel .glyphicon-chevron-right::before {content: "";}
+  #myCarousel .carousel-control.left {text-align: left; background: none!important;}
+  #myCarousel .carousel-control.right {text-align: right; background: none!important;}
+  #myCarousel .carousel-control .glyphicon-chevron-right {margin-right: 15px; position: relative; right: auto; text-shadow: none;}
+  #myCarousel .carousel-control .glyphicon-chevron-left {margin-left: 15px; position: relative; left: auto; text-shadow: none}
+  </style>
+
+    
+    <!-- https://jekyllcodex.org/without-plugin/slider/ -->
         <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
